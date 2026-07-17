@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wiki - Três Espiãs Demais</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="sidebar">
+        <img src="logotipo.png" alt="Logo As Espiãs Demais" id="logo">
+        <ul>
+            <li><a href="#introducao">Início</a></li>
+            <li><a href="#woohp">A WOOHP</a></li>
+            <li><a href="#personagens">Personagens Principais</a></li>
+            <li><a href="#viloes">Antagonistas</a></li>
+            <li><a href="#gadgets">Gadgets Oficiais</a></li>
+            <li><a href="#detalhes-tecnicos">Dados da Série</a></li>
+        </ul>
+    </nav>
+
+    <main class="content">
+        <header>
+            <h1 class="titulo-principal">Totally Spies! Wiki</h1>
+            <button id="btn-dark-mode" onclick="toggleDarkMode()">Ativar Modo Missão</button>
+        </header>
+
+        <section id="introducao" class="secao-wiki">
+            <div class="texto-principal">
+                <h2>Sobre a Série</h2>
+                <p><strong>Três Espiãs Demais</strong> (<em>Totally Spies!</em>) é uma série de animação franco-canadense que acompanha as aventuras de Sam, Clover e Alex. Elas são três adolescentes comuns de Beverly Hills que vivem uma vida dupla como agentes secretas da WOOHP (Organização Mundial de Proteção Humana).</p>
+                <p>Lidando com problemas típicos da adolescência — como provas, garotos e moda — as meninas são frequentemente "sugadas" por passagens secretas (armários, latas de lixo, secadores de cabelo) para o escritório de seu chefe, Jerry, que as envia em missões internacionais para salvar o mundo de vilões bizarros e megalomaníacos.</p>
+            </div>
+            
+            <aside class="infobox">
+                <h3>Três Espiãs Demais!</h3>
+                <img src="logotipo.png" alt="Pôster Três Espiãs Demais" class="img-infobox">
+                <table>
+                    <tr><th>Gênero</th><td>Ação, Comédia, Espionagem</td></tr>
+                    <tr><th>Criadores</th><td>Vincent Chalvon-Demersay<br>David Michel</td></tr>
+                    <tr><th>Estúdio</th><td>Marathon Media</td></tr>
+                    <tr><th>País de Origem</th><td>França / Canadá</td></tr>
+                    <tr><th>Temporadas</th><td>7 (182 episódios)</td></tr>
+                    <tr><th>Emissora Original</th><td>TF1, Teletoon</td></tr>
+                </table>
+            </aside>
+        </section>
+
+        <hr>
+
+        <section id="woohp" class="secao-wiki">
+            <h2>A WOOHP</h2>
+            <p>A <strong>World Organization Of Human Protection</strong> (Organização Mundial de Proteção Humana) é uma agência de espionagem supersecreta localizada no centro de Los Angeles. Fundada e liderada por Jerry Lewis na década de 1970, seu objetivo principal é combater o crime em escala global e proteger a humanidade de ameaças terroristas, cientistas loucos e criminosos internacionais.</p>
+        </section>
+
+        <hr>
+
+        <h2 class="titulo-centralizado" id="personagens">Agentes Principais</h2>
+        <section class="grid-personagens">
+            <div class="card" onclick="expandirCard(this)">
+                <img src="sam.jpg" alt="Samantha (Sam)" class="card-img">
+                <h3>Samantha "Sam"</h3>
+                <p><strong>Traje:</strong> Verde</p>
+                <p>A líder intelectual do grupo. É a mais lógica, focada e madura, frequentemente elaborando os planos para derrotar os vilões e decifrar enigmas complexos.</p>
+            </div>
+
+            <div class="card" onclick="expandirCard(this)">
+                <img src="clover.jpg" alt="Clover Ewing" class="card-img">
+                <h3>Clover Ewing</h3>
+                <p><strong>Traje:</strong> Vermelho</p>
+                <p>Viciada em moda, compras e garotos. Apesar de ser impulsiva e parecer superficial, é uma lutadora formidável e especialista em disfarces.</p>
+            </div>
+
+            <div class="card" onclick="expandirCard(this)">
+                <img src="alex.jpg" alt="Alexandra (Alex)" class="card-img">
+                <h3>Alexandra "Alex"</h3>
+                <p><strong>Traje:</strong> Amarelo</p>
+                <p>A alma esportiva e carinhosa do time. É ingênua, atlética, adora animais e artes marciais. Geralmente é o coração que mantém o grupo unido.</p>
+            </div>
+
+            <div class="card" onclick="expandirCard(this)">
+                <img src="Jerry.jpg" alt="Jerry Lewis" class="card-img">
+                <h3>Jerry Lewis</h3>
+                <p><strong>Cargo:</strong> Diretor</p>
+                <p>O cavalheiro britânico fundador da WOOHP. Ele convoca as meninas nas horas mais inoportunas e fornece os "gadgets" de cada missão.</p>
+            </div>
+        </section>
+
+        <hr>
+
+        <h2 class="titulo-centralizado" id="viloes">Galeria de Vilões e Rivais</h2>
+        <section class="grid-personagens">
+              <div class="card" onclick="expandirCard(this)">
+                <img src="mandy.jpg" alt="Mandy " class="card-img">
+                <h3>Mandy</h3>
+                <p><strong>Cargo:</strong> Invejosa Safada</p>
+                <p>A arquirrival das meninas na escola de Beverly Hills (e depois na universidade). Rica, mimada e com uma voz anasalada inconfundível.</p>
+            </div>
+
+            <div class="card" onclick="expandirCard(this)">
+                <img src="terrencee.jpg" alt="Terrence Lewis " class="card-img">
+                <h3>Terrence Lewis</h3>
+                <p><strong>Cargo:</strong> Vilâo Administrador/Instrutor (Falso)</p>
+                <p>O irmão gêmeo malvado de Jerry. Seu objetivo de vida é destruir a WOOHP e seu irmão. Ele fundou a L.A.M.O.S. (Liga de Antagonistas Ameaçando Oprimir o Sistema).</p>
+            </div>
+
+              <div class="card" onclick="expandirCard(this)">
+                <img src="HelgaVon.jpg" alt="Helga Von Guggen" class="card-img">
+                <h3>Helga Von Guggen</h3>
+                <p><strong>Cargo:</strong> Vilâ estilista de moda psicopata</p>
+                <p>Uma estilista que usa a moda para cometer crimes e mutações. Membro frequente da L.A.M.O.S..</p>
+            </div>
+
+                <div class="card" onclick="expandirCard(this)">
+                <img src="TimScam.jpg" alt="Tim Scam" class="card-img">
+                <h3>Tim Scam</h3>
+                <p><strong>Cargo:</strong> Vilâo estilista de moda psicopata</p>
+                <p>Ex-agente da WOOHP que foi demitido por uso ilegal de tecnologia. É um dos adversários mais inteligentes e perigosos das meninas.</p>
+            </div>
+            
+        </section>
+
+        <hr>
+<h2 class="titulo-centralizado" id="gadgets">
+    Gadgets e Apetrechos (W.O.O.H.P.)
+</h2>
+
+<section class="grid-gadgets">
+
+    <div class="gadget-item">
+
+        <img src="compacto.png"
+             alt="Compowder"
+             class="gadget-img inferior-direita">
+
+        <h4>Compowder (Pó de Compacto)</h4>
+
+        <p>
+            O comunicador oficial das espiãs,
+            disfarçado como um estojo de maquiagem.
+            Ele possui scanner, telefone, banco de dados,
+            laser e análise de DNA.
+        </p>
+
+    </div>
+
+    <div class="gadget-item">
+
+        <img src="mochila-jato.png"
+             alt="Mochila a Jato"
+             class="gadget-img inferior-direita">
+
+        <h4>Mochila a Jato</h4>
+
+        <p>
+            Discreta, muitas vezes disfarçada de mochila comum,
+            permite voos rápidos e manobras evasivas essenciais.
+        </p>
+
+    </div>
+
+    <div class="gadget-item">
+
+        <img src="batom-laser.png"
+             alt="Batom Laser"
+             class="gadget-img inferior-direita">
+
+        <h4>Batom Laser</h4>
+
+        <p>
+            Um laser de alta potência disfarçado de batom.
+            Pode cortar portas de aço grossas,
+            vidros blindados e derreter correntes.
+        </p>
+
+    </div>
+
+    <div class="gadget-item">
+
+        <img src="secador.png"
+             alt="Secador Túnel de Vento"
+             class="gadget-img inferior-direita">
+
+        <h4>Secador Túnel de Vento</h4>
+
+        <p>
+            Um secador de cabelo capaz de gerar rajadas de vento
+            com a força de um furacão em miniatura,
+            repelindo inimigos.
+        </p>
+
+    </div>
+
+</section>
+
+        <footer>
+            <p>&copy; 2026 - Trabalho de Programação 4 - Maria Eduarda (Tema 40)</p>
+            <p><em>Este site é uma Wiki criada por fã para fins acadêmicos.</em></p>
+        </footer>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
